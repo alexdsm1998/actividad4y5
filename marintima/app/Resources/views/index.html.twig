@@ -1,0 +1,31 @@
+{% extends('base.html.twig') %}{% block stylesheet %}{% endblock %}{% block body %}
+  <div class="banner">
+    <h2>MARINTIMA</h2>
+  </div>
+  <nav>
+
+    <ul>
+      <li><a href="{{path('index')}}">inicio</a></li>
+      <li><a href="{{path('index')}}">catalogo</a></li>
+      <li><a href="{{path('index')}}">info</a></li>
+   </ul>
+   <ul class="navr">
+      <li><a href="{{path('index')}}">Registro</a></li>
+      <li><a href="{{path('iniciosesion')}}">Log in</a></li>
+   </ul>
+  </nav>
+  <div class="contenedor-principal">
+
+    <h3>NOVEDADES OTOÑO</h3>
+    <img class="" src="{{ asset('/images/1.PNG')}}" alt="">
+    <img class="" src="{{ asset('/images/2.PNG')}}" alt="">
+    <img class="" src="{{ asset('/images/3.PNG')}}" alt="">
+     <br><br><br>
+    <img class="" src="{{ asset('/images/4.PNG')}}" alt="">
+    <img class="" src="{{ asset('/images/5.PNG')}}" alt="">
+    <img class="" src="{{ asset('/images/6.PNG')}}" alt="">
+  </div>
+  <footer>
+    all rights reserved to marintima ©
+  </footer>
+{% endblock %}

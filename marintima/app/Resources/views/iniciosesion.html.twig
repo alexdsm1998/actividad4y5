@@ -1,0 +1,32 @@
+{% extends('base.html.twig') %}{% block stylesheet %}{% endblock %}{% block body %}
+    <div class="banner">
+      <h2>MARINTIMA</h2>
+    </div>
+     <nav>
+
+    <ul>
+      <li><a href="{{path('index')}}">inicio</a></li>
+      <li><a href="{{path('index')}}">catalogo</a></li>
+      <li><a href="{{path('index')}}">info</a></li>
+   </ul>
+   <ul class="navr">
+      <li><a href="{{path('index')}}">Registro</a></li>
+      <li><a href="{{path('iniciosesion')}}">Log in</a></li>
+   </ul>
+  </nav>
+  <form class="form-login">
+    <div class="login-form">
+      <h1>Login</h1>
+      <label>Nombre de usuario:</label>
+      <input align="center" type="text" name="" value="">
+      <br><br>
+    <label>Contraseña:</label>
+    <input align="center" type="text" name="" value="">
+    <br><br>
+      <input type="button" name="" value="Entrar">
+    </div>
+  </form>
+<footer>
+  all rights reserved to marintima ©
+</footer>
+{% endblock %}
